@@ -5,9 +5,9 @@ body {
   background-color: #E5E5E5;
 }
 
-main {
+/* main {
   margin-top: 100px;
-}
+} */
 
 
 
@@ -37,6 +37,31 @@ main {
   color: #1ebba3;
 }
 
+
+.hero {
+  height: 646px;
+  background: #222831;
+  color: #fff;
+  padding: 200px 0;
+}
+
+.hero-desc {
+  width: 50%;
+}
+
+.quality {
+  width: 288px;
+height: 185px;
+background: #F2F4F7;
+box-shadow: 1px 2px 9px rgba(55, 20, 153, 0.1);
+border-radius: 8px;
+padding: 20px;
+margin: 0 auto 20px auto;
+}
+
+.skill-quality {
+  margin-top: -30px;
+}
 .progress {
   height: 8px !important;
 }
@@ -70,8 +95,30 @@ main {
   padding: 20px;
 }
 
-.sample-companies {
+.dev-intro {
+  padding-top: 100px;
+}
+
+.dev-content {
+  margin: 150px auto 0 auto;
+  padding: 30px;
+}
+
+.dev-content h4 {
+  width: 65%;
+  font-size: 32px;
+}
+
+.skill-section {
   padding: 100px 0;
+}
+
+.company {
+  padding: 100px 0;
+}
+
+.sample-companies {
+  padding-top: 100px;
 }
 
 /* reviews */
@@ -110,7 +157,28 @@ main {
   padding: 0;
 }
 
+.section-header h1, .section-header h2 {
+  font-size: 32px;
+}
+
 /* testimonials */
+.section-title p {
+  width: 516px;
+}
+
+.w-591 {
+  width: 591px;
+}
+
+.centered p {
+  width: 60%;
+  margin: 0 auto;
+}
+
+#testimonials {
+  padding: 100px 0 40px 0;
+}
+
 
 .testimonial-card {
   width: 552px;
@@ -174,5 +242,49 @@ footer {
   .project-samples .card {
     margin: 0  auto 20px auto;
   }
+
+  /* testimonials */
+    .testimony {
+      flex-direction: column;
+    }
+  .testimonial-card {
+    width: 315px;
+    height: 246px;
+    margin: 10px auto;
+  }
+
+  .section-title p {
+    width: 100%;
+  }
+
+  .dark .centered {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .centered h1{
+    font-size: 24px;
+    padding: 0 40px;
+  }
+
+  .w-591 {
+    width: 100%;
+  }
+
+  #client-reviews {
+    height: 849px;
+  }
+
+  .centered-count {
+    margin-bottom: 20px;
+  }
+
+  .skill-card {
+    margin-bottom: 20px;
+  }
+
+  .skill-quality {
+    margin-top: 30px;
+}
 
 }
