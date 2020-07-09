@@ -2,7 +2,7 @@ body {
   overflow-x: hidden;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #505962;
-  background-color: #E5E5E5
+  background-color: #E5E5E5;
 }
 
 main {
@@ -108,6 +108,53 @@ main {
 .no-margin {
   margin: 0 1px;
   padding: 0;
+}
+
+/* testimonials */
+
+.testimonial-card {
+  width: 552px;
+  height: 242px;
+  background: #222831;
+  border-radius: 8px;
+  color: #fff;
+  padding: 20px 15px;
+}
+.testimonials q::before, .testimonials q::after {
+  color: red;
+  font-size: 20px;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+.contact-section {
+  margin: 100px 0;
+}
+
+.socials {
+  display: flex;
+}
+
+.socials a {
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+input[type="text"] {
+  height: 56px;
+}
+
+textarea {
+ height: 138px !important;
+}
+
+/* footer */
+footer {
+  height: 66px;
+  background: #222831;
+  color: #fff;
+  padding: 15px 0;
 }
 
 /* #client-reviews {
