@@ -1,0 +1,131 @@
+body {
+  overflow-x: hidden;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #505962;
+  background-color: #E5E5E5
+}
+
+main {
+  margin-top: 100px;
+}
+
+
+
+.navbar {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .9rem;
+  letter-spacing: 0.1rem;
+  background: rgba(0, 0, 0, 0.6)!important;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+}
+
+.navbar-nav li {
+  padding-right: 0.7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  padding-top: 0.8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #1ebba3;
+}
+
+.progress {
+  height: 8px !important;
+}
+
+.skill-card {
+  width: 216.15px;
+  height: 194px;
+  background: #F2F4F7;
+  box-shadow: 1px 2px 4px rgba(25, 61, 115, 0.1);
+  border-radius: 8px;
+}
+
+.number-case {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: #F2F4F7;
+  color: #222831;
+}
+
+.number-case .count {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.centered-count .count-desc {
+  margin-top: 30px;
+}
+
+.count {
+  padding: 20px;
+}
+
+.sample-companies {
+  padding: 100px 0;
+}
+
+/* reviews */
+.dark {
+  height: 319px;
+  background: #222831;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-samples {
+  margin-top: -24px;
+  padding-bottom: 200px;
+}
+
+.project-samples .card {
+  width: 288px;
+  height: 266px;
+  margin: 0 2px;
+  text-align: center;
+  padding: 0 30px;
+}
+
+.card-head {
+  margin: 24px 0 50px 0;
+}
+
+.project-link {
+  margin-top: 50px;
+}
+
+.no-margin {
+  margin: 0 1px;
+  padding: 0;
+}
+
+/* #client-reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+} */
+
+
+/* media queries */
+
+@media (max-width: 767px){
+  .project-cards {
+    flex-direction: column;
+  }
+  .project-samples .card {
+    margin: 0  auto 20px auto;
+  }
+
+}
