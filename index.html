@@ -4,32 +4,48 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>portfolio</title>
+    <title>RW</title>
     <!-- Bootstrap core CSS -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/font-awesome.css" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
   </head>
 
   <body  data-target="#navbarResponsive">
       <!-- start home section -->
     <div id="home">
         <!-- nav -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a href="#" class="navbar-brand">portfolio</a>
+        <a href="#" class="navbar-brand"><img src="img/logo.svg" class="img-fluid">RW</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
           <span class="navbar-toggler-icon"></span>
         </button>
         
         <div class="collapse navbar-collapse " id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-        
             <li class="nav-item">
-              <a href="#logout" class="nav-link">Logout</a>
+              <a href="#logout" class="nav-link">Home</a>
             </li>
+            <li class="nav-item">
+              <a href="#logout" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#logout" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#logout" class="nav-link">Testimonial</a>
+            </li>
+            <div class="d-flex btn-join justify-center">
+              <li class="nav-item"></li>
+              <a href="#" class="btn btn-trans mr-3">My Projects</a>
+              </li>
+              <li class="nav-item"></li>
+              <a href="#" class="btn btn-sky">Hire me</a>
+              </li>
+            </div>
           </ul>
         </div>
 
@@ -41,24 +57,30 @@
     <!-- landing page section -->
     <main>
       <section class="hero">
-        <div class="text-center">
-          <h4>Welcome!</h4>
-          <h1>I’m Rebecca Wook</h1>
-          <p>Front End Developer / Wordpress Expert / Back End Developer</p>
-          <p>
-            I help designers, small agencies and businesses bring their ideas to life. Powered by Figma, VS Code and coffee, I turn
-            your requirements into CMS-ified and ecommerce-ified websites on time.
-          </p>
-          <button class="btn btn-trans">My Projects</button>
-          <button class="btn btn-info">My Projects</button>
+        <div class="container">
+          <div class="text-center">
+            <h4>Welcome!</h4>
+            <h1 class="name">I’m Rebecca Wook</h1>
+            <p class="dev-stack">Front End Developer / Wordpress Expert / Back End Developer</p>
+            <p class="dev-message text-center">
+              I help designers, small agencies and businesses bring their ideas to life. Powered by Figma, VS Code and coffee, I
+              turn
+              your requirements into CMS-ified and ecommerce-ified websites on time.
+            </p>
+            <div class="d-flex btn-join justify-center my-5">
+              <a href="#" class="btn btn-trans mr-4">My Projects</a>
+              <a href="#" class="btn btn-sky">My Projects</a>
+            </div>
+          </div>
         </div>
+       
         
       </section>
 
       <div class="skill-quality">
         <div class="container">
-          <div class="row">
-            <div class="col-md-3">
+          <div class="d-flex skillz-quality">
+            <!-- <div class="col-md-3"> -->
               <div class="card quality">
                 <div class="text-center">
                   <img src="img/verified.svg" class="img-fluid" alt="">
@@ -66,8 +88,8 @@
                   <p>Fast load times and lag free interaction, my highest priority.</p>
                 </div>
               </div>
-            </div>
-            <div class="col-md-3">
+            <!-- </div> -->
+            <!-- <div class="col-md-3"> -->
               <div class="card quality">
                 <div class="text-center">
                   <img src="img/verified.svg" class="img-fluid" alt="">
@@ -75,8 +97,8 @@
                   <p>My layouts will work on any device, big or small.</p>
                 </div>
               </div>
-            </div>
-            <div class="col-md-3">
+            <!-- </div> -->
+            <!-- <div class="col-md-3"> -->
               <div class="card quality">
                 <div class="text-center">
                   <img src="img/verified.svg" class="img-fluid" alt="">
@@ -84,8 +106,8 @@
                   <p>Strong preference for easy to use, intuitive UX/UI.</p>
                 </div>
               </div>
-            </div>
-            <div class="col-md-3">
+            <!-- </div> -->
+            <!-- <div class="col-md-3"> -->
               <div class="card quality">
                 <div class="text-center">
                   <img src="img/verified.svg" class="img-fluid" alt="">
@@ -93,7 +115,7 @@
                   <p>Websites don't have to be static, I love making pages come to life.</p>
                 </div>
               </div>
-            </div>
+            <!-- </div> -->
           </div>
         </div>
       </div>
@@ -124,16 +146,17 @@
         <div class="container">
           <div class="section-header text-center">
             <h2>What My Developer Skills Include</h2>
-            <p>A web application to help developers and programmers build beautifully designed portfolios in minutes</p>
+            <p class="w-590 text-center">A web application to help developers and programmers build beautifully designed portfolios in minutes</p>
           </div>
         </div>
         <div class="skills">
           <div class="container">
             <div class="row">
               <div class="col-md-3">
-                <div class="card skill-card mx-auto p-5">
+                <div class="card skill-card mx-auto p-3">
                   <div class="text-center">
                     <img src="img/css.svg" alt="css-logo" class="img-fluid">
+                    <p class="l-name">CSS</p>
                     <div class="progress mt-5">
                       <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
                         aria-valuemax="100"></div>
@@ -142,31 +165,34 @@
                 </div>
               </div>
               <div class="col-md-3">
-                <div class="card skill-card mx-auto p-5">
+                <div class="card skill-card mx-auto p-3">
                   <div class="text-center">
-                    <img src="img/css.svg" alt="css-logo" class="img-fluid">
+                    <img src="img/react.svg" alt="css-logo" class="img-fluid">
+                    <p class="l-name">REACT</p>
                     <div class="progress mt-5">
-                      <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                      <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0"
                         aria-valuemax="100"></div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-md-3">
-                <div class="card skill-card mx-auto p-5">
+                <div class="card skill-card mx-auto p-3">
                   <div class="text-center">
-                    <img src="img/css.svg" alt="css-logo" class="img-fluid">
+                    <img src="img/html.svg" alt="css-logo" class="img-fluid">
+                    <p class="l-name">HTML</p>
                     <div class="progress mt-5">
-                      <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                      <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
                         aria-valuemax="100"></div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-md-3">
-                <div class="card skill-card mx-auto p-5">
+                <div class="card skill-card mx-auto p-3">
                   <div class="text-center">
-                    <img src="img/css.svg" alt="css-logo" class="img-fluid">
+                    <img src="img/java.svg" alt="css-logo" class="img-fluid">
+                    <p class="l-name">JAVASCRIPT</p>
                     <div class="progress mt-5">
                       <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
                         aria-valuemax="100"></div>

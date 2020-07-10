@@ -1,6 +1,6 @@
 body {
   overflow-x: hidden;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #505962;
   background-color: #E5E5E5;
 }
@@ -16,11 +16,12 @@ body {
   font-weight: 700;
   font-size: .9rem;
   letter-spacing: 0.1rem;
-  background: rgba(0, 0, 0, 0.6)!important;
+  background: #222831 !important;
+  height: 72px;
 }
 
 .navbar-brand {
-  font-size: 2rem;
+  font-size: 24px;
 }
 
 .navbar-nav li {
@@ -42,21 +43,58 @@ body {
   height: 646px;
   background: #222831;
   color: #fff;
-  padding: 200px 0;
+  padding: 180px 0;
 }
 
 .hero-desc {
   width: 50%;
 }
 
+.dev-message {
+  width: 57%;
+  margin: 0 auto;
+}
+
+.hero a:hover {
+  color: #fff;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.btn-trans {
+  border: 1px solid #00ADB5;
+  padding: 8px 24px !important;
+  /* height: 37px; */
+  border-radius: 4px;
+  color: #fff
+}
+
+.btn-sky {
+  padding: 8px 24px;
+  background: #00ADB5;
+  border-radius: 4px;
+}
+
 .quality {
   width: 288px;
-height: 185px;
-background: #F2F4F7;
-box-shadow: 1px 2px 9px rgba(55, 20, 153, 0.1);
-border-radius: 8px;
-padding: 20px;
-margin: 0 auto 20px auto;
+  height: 185px;
+  background: #F2F4F7;
+  box-shadow: 1px 2px 9px rgba(55, 20, 153, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  margin: 0 3px 20px auto;
+}
+
+.quality-header {
+  font-weight: 500;
+  margin-top: 10px;
 }
 
 .skill-quality {
@@ -72,6 +110,7 @@ margin: 0 auto 20px auto;
   background: #F2F4F7;
   box-shadow: 1px 2px 4px rgba(25, 61, 115, 0.1);
   border-radius: 8px;
+    margin: 0px 2px 20px auto;
 }
 
 .number-case {
@@ -89,6 +128,12 @@ margin: 0 auto 20px auto;
 
 .centered-count .count-desc {
   margin-top: 30px;
+}
+
+.w-590 {
+  width: 590px;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .count {
@@ -145,11 +190,17 @@ margin: 0 auto 20px auto;
 }
 
 .card-head {
-  margin: 24px 0 50px 0;
+  margin: 24px 0 25px 0;
 }
 
 .project-link {
-  margin-top: 50px;
+  margin-top: 28px;
+}
+
+.l-name {
+  color: #111F4D;
+  font-weight: 600;
+  margin: 10px 0;
 }
 
 .no-margin {
@@ -159,6 +210,7 @@ margin: 0 auto 20px auto;
 
 .section-header h1, .section-header h2 {
   font-size: 32px;
+  font-weight: bold;
 }
 
 /* testimonials */
@@ -236,6 +288,50 @@ footer {
 /* media queries */
 
 @media (max-width: 767px){
+  
+  .hero {
+    height: 598px;
+    padding: 50px 0;
+  }
+  .skillz-quality {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .quality {
+    margin: 0 auto 20px auto;
+    text-align: center;
+  }
+  .name {
+    width: 76%;
+    margin: 0 auto;
+    font-size: 40px;
+  }
+
+  .dev-message {
+    width: 100%;
+  }
+  .dev-stack {
+    width: 75%;
+    margin: 0 auto 20px auto;
+  }
+
+  nav .btn-join {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .btn-join {
+    flex-direction: column;
+    /* width: 50%; */
+    margin: 0 auto 10px auto;
+  }
+
+  .btn-join .btn-trans {
+    margin-right: 0 !important;
+    margin-bottom: 20px;
+  }
+
   .project-cards {
     flex-direction: column;
   }
@@ -260,6 +356,10 @@ footer {
   .dark .centered {
     width: 70%;
     margin: 0 auto;
+  }
+
+  .w-590 {
+    width: 100%;
   }
 
   .centered h1{
