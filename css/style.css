@@ -1,7 +1,6 @@
 body {
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
-  color: #505962;
   background-color: #E5E5E5;
 }
 
@@ -12,12 +11,16 @@ body {
 
 
 .navbar {
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: 700;
   font-size: .9rem;
   letter-spacing: 0.1rem;
   background: #222831 !important;
   height: 72px;
+}
+
+.navbar-collapse {
+   background: #222831 !important;
 }
 
 .navbar-brand {
@@ -31,6 +34,7 @@ body {
 .navbar-dark .navbar-nav .nav-link {
   color: #fff;
   padding-top: 0.8rem;
+  font-size: 16px;
 }
 
 .navbar-dark .navbar-nav .nav-link.active,
@@ -38,6 +42,44 @@ body {
   color: #1ebba3;
 }
 
+/* mobile */
+.menu-btn_burger {
+  position: absolute;
+  right: 7px;
+  top: 20px;
+  width: 28px;
+  height: 3px;
+  background: #00ADB5; 
+  transition: ease;
+}
+
+.menu-btn_burger::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  width: 28px;
+  height: 3px;
+  background: #00ADB5;
+  transition: ease;
+}
+.menu-btn_burger::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  width: 20px;
+  height: 3px;
+  background: #00ADB5;
+  transition: ease-out;
+}
+
+.menu-btn_burger .open {
+  transform: rotate(720deg);
+  background: transparent;
+}
+
+.menu-btn_burger::before .open {
+  transform: rotate(45deg), translate(5px, 8px);
+}
 
 .hero {
   height: 646px;
@@ -75,10 +117,16 @@ body {
   color: #fff
 }
 
+.btn-trans:hover {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
 .btn-sky {
   padding: 8px 24px;
   background: #00ADB5;
   border-radius: 4px;
+  color: #fff;
 }
 
 .quality {
@@ -98,7 +146,7 @@ body {
 }
 
 .skill-quality {
-  margin-top: -30px;
+  margin-top: -76px;
 }
 .progress {
   height: 8px !important;
@@ -176,8 +224,12 @@ body {
   align-items: center;
 }
 
+.cola-btn {
+  margin-top: 20px;
+}
+
 .project-samples {
-  margin-top: -24px;
+  margin-top: -58px;
   padding-bottom: 200px;
 }
 
@@ -208,7 +260,7 @@ body {
   padding: 0;
 }
 
-.section-header h1, .section-header h2 {
+.section-header h1, .section-header h2, .section-header h4 {
   font-size: 32px;
   font-weight: bold;
 }
@@ -288,7 +340,7 @@ footer {
 /* media queries */
 
 @media (max-width: 767px){
-  
+  /* t */
   .hero {
     height: 598px;
     padding: 50px 0;
