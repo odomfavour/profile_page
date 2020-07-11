@@ -50,7 +50,6 @@ body {
   width: 28px;
   height: 3px;
   background: #00ADB5; 
-  transition: ease;
 }
 
 .menu-btn_burger::before {
@@ -60,7 +59,6 @@ body {
   width: 28px;
   height: 3px;
   background: #00ADB5;
-  transition: ease;
 }
 .menu-btn_burger::after {
   content: '';
@@ -69,16 +67,11 @@ body {
   width: 20px;
   height: 3px;
   background: #00ADB5;
-  transition: ease-out;
 }
 
-.menu-btn_burger .open {
+.open {
   transform: rotate(720deg);
   background: transparent;
-}
-
-.menu-btn_burger::before .open {
-  transform: rotate(45deg), translate(5px, 8px);
 }
 
 .hero {
@@ -239,10 +232,23 @@ body {
   margin: 0 2px;
   text-align: center;
   padding: 0 30px;
+  background: #F2F4F7;
+  box-shadow: 1px 2px 9px rgba(55, 20, 153, 0.1);
+  border-radius: 8px;
 }
 
 .card-head {
   margin: 24px 0 25px 0;
+}
+.black {
+  color: #231F20;
+}
+.red {
+  color: #E15B29;
+}
+
+.orange {
+  color: #F7941D;
 }
 
 .project-link {
@@ -336,11 +342,85 @@ footer {
   
 } */
 
+/* .page-wrap {
+  transition: 3s all ease-in-out;
+  background-color: #F2F4F7;
+  content: "";
+  position: absolute;
+  z-index: 2000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  visibility: visible;
+} */
+
+.mobile-view {
+  width: 100%;
+  position: fixed;
+  height: 100vh;
+  right: 0;
+  z-index: 2000;
+  padding-top: 20px;
+  background:  #E5E5E5;;
+  transform: translateX(110%);
+  box-shadow: -10px 0 28px -10px #ccc;
+  transition: .3s all ease-in-out;
+}
+
+.open {
+  transform: translateX(0%) !important;
+}
+
+.mobile-view-close i{
+  font-size: 25px; 
+  display: inline-block;
+  padding: 10px 5px;
+  font-weight: 100;
+  cursor: pointer;
+}
+
+.mobile-view .mobile-view-body {
+  overflow: scroll;
+  position: relative;
+  padding: 50px 0;
+}
+
+.mobile-view .clone-view {
+  padding: 0;
+  margin: 0 ;
+  list-style: none;
+}
+
+.mobile-view .clone-view  a {
+  display: block;
+  position: relative;
+  color: #222831;
+  font-size: 24px;
+}
+
 
 /* media queries */
 
 @media (max-width: 767px){
-  /* t */
+
+  .socials {
+    margin-bottom: 20px;
+  }
+
+  .client-info {
+    justify-content: space-between;
+  }
+  .name p {
+    font-size: 16px;
+  }
+  .mobile-menu i {
+    font-size: 25px;
+    color:#00ADB5;
+  }
+  .mobile-view-close i {
+    color:#00ADB5;
+  }
   .hero {
     height: 598px;
     padding: 50px 0;
@@ -348,6 +428,28 @@ footer {
   .skillz-quality {
     flex-direction: column;
     margin: 0 auto;
+  }
+
+  .section-header h4, .section-header h2, .section-header h1 {
+    font-size: 24px;
+  }
+
+  .companies {
+    padding: 0 60px;
+    margin-bottom: 20px;
+  }
+
+  .centered p {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.project-samples {
+    margin-top: 20px;
+}
+
+  .dev-content h4 {
+    width: 100%
   }
 
   .quality {

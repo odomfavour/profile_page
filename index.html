@@ -13,512 +13,541 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
   </head>
 
-  <body  data-target="#navbarResponsive">
+  <body  class="off-view"  data-target="#navbarResponsive">
       <!-- start home section -->
-    <div id="home">
-        <!-- nav -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a href="#" class="navbar-brand"><img src="img/logo.svg" class="img-fluid"> RW</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- <div class="menu-btn">
-          <span class="menu-btn_burger"></span>
-        </div>
-         -->
-        <div class="collapse navbar-collapse " id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a href="#logout" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#logout" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="#logout" class="nav-link">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a href="#logout" class="nav-link">Testimonial</a>
-            </li>
-            <div class="d-flex btn-join justify-center">
-              <li class="nav-item"></li>
-              <a href="#" class="btn btn-trans mr-3">My Projects</a>
-              </li>
-              <li class="nav-item"></li>
-              <a href="#" class="btn btn-sky">Hire Me</a>
-              </li>
-            </div>
-          </ul>
-        </div>
-
-      </div>
-        
-    </nav>    
-    <!-- end of nav -->
-
-    <!-- landing page section -->
-    <main>
-      <section class="hero">
-        <div class="container">
-          <div class="text-center">
-            <h4>Welcome!</h4>
-            <h1 class="name">I’m Rebecca Wook</h1>
-            <p class="dev-stack">Front End Developer / Wordpress Expert / Back End Developer</p>
-            <p class="dev-message text-center">
-              I help designers, small agencies and businesses bring their ideas to life. Powered by Figma, VS Code and coffee, I
-              turn
-              your requirements into CMS-ified and ecommerce-ified websites on time.
-            </p>
-            <div class="d-flex btn-join justify-center my-5">
-              <a href="#" class="btn btn-trans mr-4">My Projects</a>
-              <a href="#" class="btn btn-sky">Hire Me</a>
-            </div>
-          </div>
-        </div>
-       
-        
-      </section>
-
-      <div class="skill-quality">
-        <div class="container">
-          <div class="d-flex skillz-quality">
-            <!-- <div class="col-md-3"> -->
-              <div class="card quality">
-                <div class="text-center">
-                  <img src="img/verified.svg" class="img-fluid" alt="">
-                  <p class="quality-header">Fast</p>
-                  <p>Fast load times and lag free interaction, my highest priority.</p>
-                </div>
-              </div>
-            <!-- </div> -->
-            <!-- <div class="col-md-3"> -->
-              <div class="card quality">
-                <div class="text-center">
-                  <img src="img/verified.svg" class="img-fluid" alt="">
-                  <p class="quality-header">Responsive</p>
-                  <p>My layouts will work on any device, big or small.</p>
-                </div>
-              </div>
-            <!-- </div> -->
-            <!-- <div class="col-md-3"> -->
-              <div class="card quality">
-                <div class="text-center">
-                  <img src="img/verified.svg" class="img-fluid" alt="">
-                  <p class="quality-header">Responsive</p>
-                  <p>Strong preference for easy to use, intuitive UX/UI.</p>
-                </div>
-              </div>
-            <!-- </div> -->
-            <!-- <div class="col-md-3"> -->
-              <div class="card quality">
-                <div class="text-center">
-                  <img src="img/verified.svg" class="img-fluid" alt="">
-                  <p class="quality-header">Dynamic</p>
-                  <p>Websites don't have to be static, I love making pages come to life.</p>
-                </div>
-              </div>
-            <!-- </div> -->
-          </div>
-        </div>
-      </div>
-
-      <section class="dev-intro">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <img src="img/dev.svg" alt="developer" class="img-fluid">
-            </div>
-            <div class="col-md-6">
-              <div class="dev-content">
-                <div class="section-header">
-                  <h4>Need Creative Design? I can Help</h4>
+      <div class="page-wrap">
+        <div id="home">
+          <div class="mobile-view">
+            <div class="container">
+              <div class="mobile-view-header">
+                <div class="d-flex justify-between">
+                  <a href="#" class="navbar-brand"><img src="img/logo.svg" class="img-fluid"> RW</a>
+                  <div class="mobile-view-close">
+                    <i class="fa fa-times"></i>
+                  </div>
                 </div>
                 
-                <p>I'm a Front-End Developer for ChowNow in Los Angeles, CA.
-                  I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.
-                  I help designers, small agencies and businesses bring their ideas to life. Powered by Figma, VS Code and coffee, I
-                  turn
-                  your requirements into CMS-ified and ecommerce-ified websites - on time and on budget.</p>
-              </div>
-              
-            </div>
-          </div>
-          
-        </div>
-      </section>
-
-      <section class="skill-section">
-        <div class="container">
-          <div class="section-header text-center">
-            <h2>What My Developer Skills Include</h2>
-            <p class="w-590 text-center">A web application to help developers and programmers build beautifully designed portfolios in minutes</p>
-          </div>
-        </div>
-        <div class="skills">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-3">
-                <div class="card skill-card mx-auto p-3">
-                  <div class="text-center">
-                    <img src="img/css.svg" alt="css-logo" class="img-fluid">
-                    <p class="l-name">CSS</p>
-                    <div class="progress mt-5">
-                      <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
-                        aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="card skill-card mx-auto p-3">
-                  <div class="text-center">
-                    <img src="img/react.svg" alt="css-logo" class="img-fluid">
-                    <p class="l-name">REACT</p>
-                    <div class="progress mt-5">
-                      <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0"
-                        aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="card skill-card mx-auto p-3">
-                  <div class="text-center">
-                    <img src="img/html.svg" alt="css-logo" class="img-fluid">
-                    <p class="l-name">HTML</p>
-                    <div class="progress mt-5">
-                      <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
-                        aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="card skill-card mx-auto p-3">
-                  <div class="text-center">
-                    <img src="img/java.svg" alt="css-logo" class="img-fluid">
-                    <p class="l-name">JAVASCRIPT</p>
-                    <div class="progress mt-5">
-                      <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
-                        aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="client-reviews" class="dark">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3 ">
-              <div class="centered-count text-center">
-                <div class="number-case mx-auto">
-                  <p class="count">900+</p>
-                </div>
-                <p class="count-desc">Happy Clients</p>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="centered-count text-center">
-                <div class="number-case mx-auto">
-                  <p class="count">15</p>
-                </div>
-                <p class="count-desc">Years of Experience</p>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="centered-count text-center">
-                <div class="number-case mx-auto">
-                  <p class="count">300</p>
-                </div>
-                <p class="count-desc">Awards Winning</p>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="centered-count text-center">
-                <div class="number-case mx-auto">
-                  <p class="count">900+</p>
-                </div>
-                <p class="count-desc">Completed Projects</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="company">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="section-header">
-                <h2>Companies i have worked with</h2>
                 
-              </div>
-              <p class="w-591">I am passionate about building excellent software that improves the lives of those around me. I specialize in
-                creating
-                software for clients ranging from individuals and small-businesses all the way to large enterprise corporations. What
-                would you do if you had a software expert available at your fingertips?</p>
-            </div>
-            <div class="col-md-6"></div>
-          </div>
-          <div class="sample-companies">
-            <div class="row">
-              <div class="col-md-3">
-                <img src="img/camel.png" alt="" class="img-fluid">
-              </div>
-              <div class="col-md-3">
-                <img src="img/mongolab.png" alt="" class="img-fluid">
-              </div>
-              <div class="col-md-3">
-                <img src="img/protonet.png" alt="" class="img-fluid">
-              </div>
-              <div class="col-md-3">
-                <img src="img/wave.png" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-          
-        </div>
-      </section>
-
-      <section class="dark">
-        <div class="container">
-          <div class="section-header text-center">
-            <h2>My latest projects</h2>
-          </div>
-          <p class="w-590 text-center">Have a glance at some selected works i am proud of, as i delivered solutions to branding and design pattern and design
-          problems, with in-depth research, innovation and creativity.</p>
-        </div>
-      </section>
-      <div class="project-samples">
-        <div class="container">
-          <div class="d-flex project-cards">
-            <!-- <div class="col-md-3 no-margin"> -->
-              <div class="card">
-                <div class="card-head">
-                  <img src="img/myspace_small.png" alt="" class="img-fluid">
-                </div>
-                <div class="card-content">
-                  <p>A powerful, easy-to-configure form backend for designers and developers. No coding required.</p>
-                  <div class="project-link">
-                    <a href="#">www.myspace.com.io</a>
-                  </div>
-                </div>     
-              </div>
-            <!-- </div> -->
-            <!-- <div class="col-md-3 no-margin"> -->
-              <div class="card">
-                <div class="card-head">
-                  <img src="img/mongolab_small.png" alt="" class="img-fluid">
-                </div>
-                <div class="card-content">
-                  <p>A powerful, easy-to-configure form backend for designers and developers. No coding required.</p>
-                  <div class="project-link">
-                    <a href="#">www.myspace.com.io</a>
-                  </div>
-                </div>
-              </div>
               
-            <!-- </div> -->
-            <!-- <div class="col-md-3 no-margin"> -->
-              <div class="card">
-                <div class="card-head">
-                  <img src="img/protonet_small.png" alt="" class="img-fluid">
-                </div>
-                <div class="card-content">
-                  <p>A powerful, easy-to-configure form backend for designers and developers. No coding required.</p>
-                  <div class="project-link">
-                    <a href="#">www.myspace.com.io</a>
-                  </div>
-                </div>
               </div>
-            <!-- </div> -->
-            <!-- <div class="col-md-3 no-margin"> -->
-              <div class="card">
-                <div class="card-head">
-                  <img src="img/qualcom_small.png" alt="" class="img-fluid">
-                </div>
-                <div class="card-content">
-                  <p>A powerful, easy-to-configure form backend for designers and developers. No coding required.</p>
-                  <div class="project-link">
-                    <a href="#">www.myspace.com.io</a>
-                  </div>
-                </div>
-              </div>
-            <!-- </div> -->
-          </div>
-          <div class="d-flex project-cards">
-            <!-- <div class="col-md-3 no-margin"> -->
-            <div class="card">
-              <div class="card-head">
-                <img src="img/myspace_small.png" alt="" class="img-fluid">
-              </div>
-              <div class="card-content">
-                <p>A powerful, easy-to-configure form backend for designers and developers. No coding required.</p>
-                <div class="project-link">
-                  <a href="#">www.myspace.com.io</a>
-                </div>
-              </div>
+              <div class="mobile-view-body"></div>
             </div>
-            <!-- </div> -->
-            <!-- <div class="col-md-3 no-margin"> -->
-            <div class="card">
-              <div class="card-head">
-                <img src="img/mongolab_small.png" alt="" class="img-fluid">
-              </div>
-              <div class="card-content">
-                <p>A powerful, easy-to-configure form backend for designers and developers. No coding required.</p>
-                <div class="project-link">
-                  <a href="#">www.myspace.com.io</a>
-                </div>
-              </div>
-            </div>
-          
-            <!-- </div> -->
-            <!-- <div class="col-md-3 no-margin"> -->
-            <div class="card">
-              <div class="card-head">
-                <img src="img/protonet_small.png" alt="" class="img-fluid">
-              </div>
-              <div class="card-content">
-                <p>A powerful, easy-to-configure form backend for designers and developers. No coding required.</p>
-                <div class="project-link">
-                  <a href="#">www.myspace.com.io</a>
-                </div>
-              </div>
-            </div>
-            <!-- </div> -->
-            <!-- <div class="col-md-3 no-margin"> -->
-            <div class="card">
-              <div class="card-head">
-                <img src="img/qualcom_small.png" alt="" class="img-fluid">
-              </div>
-              <div class="card-content">
-                <p>A powerful, easy-to-configure form backend for designers and developers. No coding required.</p>
-                <div class="project-link">
-                  <a href="#">www.myspace.com.io</a>
-                </div>
-              </div>
-            </div>
-            <!-- </div> -->
-          </div>
-        </div>
-      </div>
-      <section class="dark">
-        <div class="text-center centered">
-          <h1>Interested In Collaborating?</h1>
-          <p>I’m always open to discussing product design work or partnership opportunities</p>
-          <button class="btn btn-sky cola-btn"> Hire Me</button>
-        </div>
-        
-      </section>
-
-      <section id="testimonials">
-        <div class="container">
-          <div class="section-title">
-            <h2>Testimonials</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim odio semper aenean dolor mauris. Id magna
-              quisque
-              lorem urna, vitae nisl turpis.</p>
-          </div>
-          <div class="testimonials">
-           <div class="row">
-             <div class="col-md-6">
-              <div class="testimonial-card">
-                <div class="client-info d-flex">
-                  <div class="text-center mr-2">
-                    <img src="img/test2.png" alt="" class="img-fluid ">
-                  </div>
-                  <div class="name">
-                    <p>Mull Din</p>
-                    <p>Slack CEO</p>
-                  </div>
-                </div>
-                <q>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas pharetra risus sit nunc integer. Id sit porta
-                  habitant
-                  viverra sed.
-                </q>
-              </div>
-             </div>
-             <div class="col-md-6">
-              <div class="testimonial-card">
-                <div class="client-info d-flex">
-                  <div class="text-center mr-2">
-                    <img src="img/test1.png" alt="" class="img-fluid ">
-                  </div>
-                  <div class="name">
-                    <p>Mull Din</p>
-                    <p>Slack CEO</p>
-                  </div>
-                </div>
-                <q>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas pharetra risus sit nunc integer. Id sit porta
-                  habitant
-                  viverra sed.
-                </q>
-              </div>
-             </div>
-             
-             
             
-           </div>
           </div>
+          <!-- nav -->
+          <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <div class="container">
+              <a href="#" class="navbar-brand"><img src="img/logo.svg" class="img-fluid"> RW</a>
+        
+              <div class="mobile-menu d-inline-block d-lg-none ml-md-0 ml-auto">
+                <i class="fa fa-bars"></i>
+              </div>
+              <div class="d-none d-lg-block">
+                <ul class="navbar-nav ml-auto js-clone-nav">
+                  <li class="nav-item">
+                    <a href="#logout" class="nav-link">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#logout" class="nav-link">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#logout" class="nav-link">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#logout" class="nav-link">Testimonial</a>
+                  </li>
+                  <div class="d-flex btn-join justify-center">
+                    <li class="nav-item"></li>
+                    <a href="#" class="btn btn-trans mr-3">My Projects</a>
+                    </li>
+                    <li class="nav-item"></li>
+                    <a href="#" class="btn btn-sky">Hire Me</a>
+                    </li>
+                  </div>
+                </ul>
+              </div>
+        
+            </div>
+        
         </div>
         
-      </section>
-      <section class="contact-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="section-title">
-                <h2>Get In Touch</h2>
-                <p>Have a question or want to work together?</p>
-              </div>
-              <div class="socials">
-                <a href="#">
-                  <img src="img/behance.svg" alt="" class="img-fluid">
-                </a>
-                <a href="#">
-                  <img src="img/linkedin.svg" alt="" class="img-fluid">
-                </a>
-                <a href="#">
-                  <img src="img/dribbble.svg" alt="" class="img-fluid">
-                </a>
+        </nav>
+        <!-- end of nav -->
+        <div class="mobile-nav-toggle">
+          <i class="fa fa-bars js-toggle"></i>
+        </div>
+        <div class="mobile-nav"></div>
+        <!-- landing page section -->
+        <main>
+          <section class="hero">
+            <div class="container">
+              <div class="text-center">
+                <h4>Welcome!</h4>
+                <h1 class="name">I’m Rebecca Wook</h1>
+                <p class="dev-stack">Front End Developer / Wordpress Expert / Back End Developer</p>
+                <p class="dev-message text-center">
+                  I help designers, small agencies and businesses bring their ideas to life. Powered by Figma, VS Code and
+                  coffee, I
+                  turn
+                  your requirements into CMS-ified and ecommerce-ified websites on time.
+                </p>
+                <div class="d-flex btn-join justify-center my-5">
+                  <a href="#" class="btn btn-trans mr-4">My Projects</a>
+                  <a href="#" class="btn btn-sky">Hire Me</a>
+                </div>
               </div>
             </div>
-            <div class="col-md-6">
-              <form action="">
-                <div class="form-group">
-                  <input type="text" placeholder="Name" class="form-control">
+        
+        
+          </section>
+        
+          <div class="skill-quality">
+            <div class="container">
+              <div class="d-flex skillz-quality">
+                <!-- <div class="col-md-3"> -->
+                <div class="card quality">
+                  <div class="text-center">
+                    <img src="img/verified.svg" class="img-fluid" alt="">
+                    <p class="quality-header">Fast</p>
+                    <p>Fast load times and lag free interaction, my highest priority.</p>
+                  </div>
                 </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Email">
+                <!-- </div> -->
+                <!-- <div class="col-md-3"> -->
+                <div class="card quality">
+                  <div class="text-center">
+                    <img src="img/verified.svg" class="img-fluid" alt="">
+                    <p class="quality-header">Responsive</p>
+                    <p>My layouts will work on any device, big or small.</p>
+                  </div>
                 </div>
-                <div class="form-group">
-                  <textarea name="" id="" placeholder="Type message" class="form-control"></textarea>
+                <!-- </div> -->
+                <!-- <div class="col-md-3"> -->
+                <div class="card quality">
+                  <div class="text-center">
+                    <img src="img/verified.svg" class="img-fluid" alt="">
+                    <p class="quality-header">Responsive</p>
+                    <p>Strong preference for easy to use, intuitive UX/UI.</p>
+                  </div>
                 </div>
-                
-                <button type="submit" class="btn btn-sky">Send message</button>
-                
-              </form>
+                <!-- </div> -->
+                <!-- <div class="col-md-3"> -->
+                <div class="card quality">
+                  <div class="text-center">
+                    <img src="img/verified.svg" class="img-fluid" alt="">
+                    <p class="quality-header">Dynamic</p>
+                    <p>Websites don't have to be static, I love making pages come to life.</p>
+                  </div>
+                </div>
+                <!-- </div> -->
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <footer>
-        <div class="container">
-          <p class="text-center">&copy Copyright 2020 RW Portfolio. All rights reserved.</p>
-        </div>
-      </footer>
-
-    </main>
-    
+        
+          <section class="dev-intro">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <img src="img/dev.svg" alt="developer" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                  <div class="dev-content">
+                    <div class="section-header">
+                      <h4>Need Creative Design? I can Help</h4>
+                    </div>
+        
+                    <p>I'm a Front-End Developer for ChowNow in Los Angeles, CA.
+                      I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.
+                      I help designers, small agencies and businesses bring their ideas to life. Powered by Figma, VS Code and
+                      coffee, I
+                      turn
+                      your requirements into CMS-ified and ecommerce-ified websites - on time and on budget.</p>
+                  </div>
+        
+                </div>
+              </div>
+        
+            </div>
+          </section>
+        
+          <section class="skill-section">
+            <div class="container">
+              <div class="section-header text-center">
+                <h2>What My Developer Skills Include</h2>
+                <p class="w-590 text-center">A web application to help developers and programmers build beautifully designed
+                  portfolios in minutes</p>
+              </div>
+            </div>
+            <div class="skills">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="card skill-card mx-auto p-3">
+                      <div class="text-center">
+                        <img src="img/css.svg" alt="css-logo" class="img-fluid">
+                        <p class="l-name">CSS</p>
+                        <div class="progress mt-5">
+                          <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                            aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card skill-card mx-auto p-3">
+                      <div class="text-center">
+                        <img src="img/react.svg" alt="css-logo" class="img-fluid">
+                        <p class="l-name">REACT</p>
+                        <div class="progress mt-5">
+                          <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0"
+                            aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card skill-card mx-auto p-3">
+                      <div class="text-center">
+                        <img src="img/html.svg" alt="css-logo" class="img-fluid">
+                        <p class="l-name">HTML</p>
+                        <div class="progress mt-5">
+                          <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
+                            aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card skill-card mx-auto p-3">
+                      <div class="text-center">
+                        <img src="img/java.svg" alt="css-logo" class="img-fluid">
+                        <p class="l-name">JAVASCRIPT</p>
+                        <div class="progress mt-5">
+                          <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                            aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        
+          <section id="client-reviews" class="dark">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3 ">
+                  <div class="centered-count text-center">
+                    <div class="number-case mx-auto">
+                      <p class="count">900+</p>
+                    </div>
+                    <p class="count-desc">Happy Clients</p>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="centered-count text-center">
+                    <div class="number-case mx-auto">
+                      <p class="count">15</p>
+                    </div>
+                    <p class="count-desc">Years of Experience</p>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="centered-count text-center">
+                    <div class="number-case mx-auto">
+                      <p class="count">300</p>
+                    </div>
+                    <p class="count-desc">Awards Winning</p>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="centered-count text-center">
+                    <div class="number-case mx-auto">
+                      <p class="count">900+</p>
+                    </div>
+                    <p class="count-desc">Completed Projects</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        
+          <section class="company">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="section-header">
+                    <h2>Companies i have worked with</h2>
+        
+                  </div>
+                  <p class="w-591">I am passionate about building excellent software that improves the lives of those around me.
+                    I specialize in
+                    creating
+                    software for clients ranging from individuals and small-businesses all the way to large enterprise
+                    corporations. What
+                    would you do if you had a software expert available at your fingertips?</p>
+                </div>
+                <div class="col-md-6"></div>
+              </div>
+              <div class="sample-companies">
+                <div class="row">
+                  <div class="col-md-3 companies">
+                    <img src="img/camel.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="col-md-3 companies">
+                    <img src="img/mongolab.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="col-md-3 companies">
+                    <img src="img/protonet.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="col-md-3 companies">
+                    <img src="img/wave.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+        
+            </div>
+          </section>
+        
+          <section class="dark">
+            <div class="container">
+              <div class="section-header text-center">
+                <h2>My latest projects</h2>
+              </div>
+              <p class="w-590 text-center">Have a glance at some selected works i am proud of, as i delivered solutions to
+                branding and design pattern and design
+                problems, with in-depth research, innovation and creativity.</p>
+            </div>
+          </section>
+          <div class="project-samples">
+            <div class="container">
+              <div class="d-flex project-cards">
+                <!-- <div class="col-md-3 no-margin"> -->
+                <div class="card">
+                  <div class="card-head">
+                    <img src="img/myspace_small.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="card-content">
+                    <p>A powerful, easy-to-configure form backend for designers and developers. No coding required.</p>
+                    <div class="project-link">
+                      <a href="#" class="black">www.myspace.com.io</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- </div> -->
+                <!-- <div class="col-md-3 no-margin"> -->
+                <div class="card">
+                  <div class="card-head">
+                    <img src="img/mongolab_small.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="card-content">
+                    <p>A powerful, easy-to-configure form backend for designers and developers. No coding required.</p>
+                    <div class="project-link">
+                      <a href="#" class="orange">www.myspace.com.io</a>
+                    </div>
+                  </div>
+                </div>
+        
+                <!-- </div> -->
+                <!-- <div class="col-md-3 no-margin"> -->
+                <div class="card">
+                  <div class="card-head">
+                    <img src="img/protonet_small.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="card-content">
+                    <p>A powerful, easy-to-configure form backend for designers and developers. No coding required.</p>
+                    <div class="project-link">
+                      <a href="#" class="orange">www.myspace.com.io</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- </div> -->
+                <!-- <div class="col-md-3 no-margin"> -->
+                <div class="card">
+                  <div class="card-head">
+                    <img src="img/qualcom_small.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="card-content">
+                    <p>A powerful, easy-to-configure form backend for designers and developers. No coding required.</p>
+                    <div class="project-link">
+                      <a href="#" class="black">www.myspace.com.io</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- </div> -->
+              </div>
+              <div class="d-flex project-cards">
+                <!-- <div class="col-md-3 no-margin"> -->
+                <div class="card">
+                  <div class="card-head">
+                    <img src="img/myspace_small.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="card-content">
+                    <p>A powerful, easy-to-configure form backend for designers and developers. No coding required.</p>
+                    <div class="project-link">
+                      <a href="#" class="red">www.myspace.com.io</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- </div> -->
+                <!-- <div class="col-md-3 no-margin"> -->
+                <div class="card">
+                  <div class="card-head">
+                    <img src="img/mongolab_small.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="card-content">
+                    <p>A powerful, easy-to-configure form backend for designers and developers. No coding required.</p>
+                    <div class="project-link">
+                      <a href="#" class="black">www.myspace.com.io</a>
+                    </div>
+                  </div>
+                </div>
+        
+                <!-- </div> -->
+                <!-- <div class="col-md-3 no-margin"> -->
+                <div class="card">
+                  <div class="card-head">
+                    <img src="img/protonet_small.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="card-content">
+                    <p>A powerful, easy-to-configure form backend for designers and developers. No coding required.</p>
+                    <div class="project-link">
+                      <a href="#" class="black">www.myspace.com.io</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- </div> -->
+                <!-- <div class="col-md-3 no-margin"> -->
+                <div class="card">
+                  <div class="card-head">
+                    <img src="img/qualcom_small.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="card-content">
+                    <p>A powerful, easy-to-configure form backend for designers and developers. No coding required.</p>
+                    <div class="project-link">
+                      <a href="#" class="orange">www.myspace.com.io</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- </div> -->
+              </div>
+            </div>
+          </div>
+          <section class="dark">
+            <div class="text-center centered">
+              <h1>Interested In Collaborating?</h1>
+              <p>I’m always open to discussing product design work or partnership opportunities</p>
+              <button class="btn btn-sky cola-btn"> Hire Me</button>
+            </div>
+        
+          </section>
+        
+          <section id="testimonials">
+            <div class="container">
+              <div class="section-title">
+                <h2>Testimonials</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim odio semper aenean dolor mauris. Id magna
+                  quisque
+                  lorem urna, vitae nisl turpis.</p>
+              </div>
+              <div class="testimonials">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="testimonial-card">
+                      <div class="client-info d-flex">
+                        <div class="text-center mr-2">
+                          <img src="img/test2.png" alt="" class="img-fluid ">
+                        </div>
+                        <div class="name">
+                          <p>Mull Din</p>
+                          <p>Slack CEO</p>
+                        </div>
+                      </div>
+                      <q>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas pharetra risus sit nunc integer. Id sit
+                        porta
+                        habitant
+                        viverra sed.
+                      </q>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="testimonial-card">
+                      <div class="client-info d-flex">
+                        <div class="text-center mr-2">
+                          <img src="img/test1.png" alt="" class="img-fluid ">
+                        </div>
+                        <div class="name">
+                          <p>Mull Din</p>
+                          <p>Slack CEO</p>
+                        </div>
+                      </div>
+                      <q>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas pharetra risus sit nunc integer. Id sit
+                        porta
+                        habitant
+                        viverra sed.
+                      </q>
+                    </div>
+                  </div>
+        
+        
+        
+                </div>
+              </div>
+            </div>
+        
+          </section>
+          <section class="contact-section">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="section-title">
+                    <h2>Get In Touch</h2>
+                    <p>Have a question or want to work together?</p>
+                  </div>
+                  <div class="socials">
+                    <a href="#">
+                      <img src="img/behance.svg" alt="" class="img-fluid">
+                    </a>
+                    <a href="#">
+                      <img src="img/linkedin.svg" alt="" class="img-fluid">
+                    </a>
+                    <a href="#">
+                      <img src="img/dribbble.svg" alt="" class="img-fluid">
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <form action="">
+                    <div class="form-group">
+                      <input type="text" placeholder="Name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                      <textarea name="" id="" placeholder="Type message" class="form-control"></textarea>
+                    </div>
+        
+                    <button type="submit" class="btn btn-sky">Send message</button>
+        
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+        
+          <footer>
+            <div class="container">
+              <p class="text-center">&copy Copyright 2020 RW Portfolio. All rights reserved.</p>
+            </div>
+          </footer>
+        
+        </main>
+      </div>
+   
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
